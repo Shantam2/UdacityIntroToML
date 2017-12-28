@@ -21,8 +21,10 @@ from sklearn.svm import SVC
 features_train, features_test, labels_train, labels_test = preprocess()
 
 
-clf = SVC(kernel="linear")
+clf = SVC(kernel="rbf",C=10000)
 t0=time()
+###features_train = features_train[:len(features_train)/100] 
+###labels_train = labels_train[:len(labels_train)/100] 
 clf.fit(features_train,labels_train)
 print "Training time:", round(time()-t0, 3), "s"
 t0=time()
@@ -30,6 +32,12 @@ pred = clf.predict(features_test)
 print "Predicting time:", round(time()-t0, 3), "s"
 acc = accuracy_score(labels_test,pred)
 print(acc)
+
+ans1=pred[10]
+ans2=pred[26]
+ans3=pred[50]
+
+print(ans1,ans2,ans3)   
 
 #########################################################
 ### OUTPUT ###
@@ -39,6 +47,10 @@ print(acc)
 ### Predicting time: 50.295 s
 ### >>> print(acc)
 ### 0.982555934774
+### 
+### >>> from collections import Counter
+### >>> Counter(pred)
+### Counter({0: 881, 1: 877})
 #########################################################
 
 
