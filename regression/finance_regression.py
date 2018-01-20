@@ -79,8 +79,18 @@ Coeffecient = reg.coef_
 Intercept = reg.intercept_
 print('Coeffecient -', reg.coef_)
 print('Intercept - ', reg.intercept_)
-
 plt.xlabel(features_list[1])
 plt.ylabel(features_list[0])
 plt.legend()
 plt.show()
+
+
+
+#################################   
+###   ('Coeffecient -', array([ 5.44814029]))
+###   ('Intercept - ', -102360.54329387983)
+###   0.0455091926995
+###   -1.48499241737
+###   ('Coeffecient -', array([ 2.27410114]))
+###   ('Intercept - ', 124444.38886605436)
+################################# 
