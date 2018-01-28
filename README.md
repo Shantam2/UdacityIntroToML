@@ -22,4 +22,4 @@ __Steps in short -__
 1. Collect the data
 2. Feature Selection
 3. Select the algorigthm
-4. Validation
+4. Validation/ Evaluation
