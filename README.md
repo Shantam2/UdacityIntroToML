@@ -14,3 +14,11 @@ Nearly every time a POI shows up in my test set, I am able to identify him or he
 
 
 --------Basically, it finds all correct ones but includes few incorrect ones too
+
+
+__Steps in short -__
+0. Define the aim/question
+1. Collect the data
+2. Feature Selection
+3. Select the algorigthm
+4. Validation
